@@ -1,0 +1,34 @@
+*,
+html,
+body {
+	box-sizing: border-box;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: darken($primary_bg, 5%);
+	font-family: unquote(map-get($fontsCollection, "two"));
+	font-size: $base_font;
+	font-weight: map-get($fontWeight, "med");
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	@include WH();
+}
+
+button {
+	background: none;
+	border: none;
+}

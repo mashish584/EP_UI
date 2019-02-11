@@ -1,0 +1,18 @@
+// dropdown navigation
+[data-target="subMenu"] {
+	&:hover + .sub-menu {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+// dropdownlist
+.show-list {
+	max-height: 350px !important;
+	li {
+		&.active {
+			background: $theme_color;
+			color: $primary_bg;
+		}
+	}
+}

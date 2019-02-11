@@ -1,0 +1,21 @@
+{
+	"name": "EP_FRONTEND",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel src/views/index.pug --open",
+		"build": "parcel build src/views/index.pug",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"parcel-bundler": "^1.11.0"
+	},
+	"devDependencies": {
+		"pug": "^2.0.3",
+		"sass": "^1.17.0"
+	}
+}
