@@ -1,9 +1,7 @@
 // dropdown navigation
-[data-target="subMenu"] {
-	&:hover + .sub-menu {
-		transform: translateY(0);
-		opacity: 1;
-	}
+.show-dropnav {
+	transform: translateY(0);
+	opacity: 1;
 }
 
 // dropdownlist

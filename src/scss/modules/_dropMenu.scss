@@ -6,9 +6,9 @@
 	@include WH(175px, auto);
 	top: 55px;
 	left: -50%;
-	transform: translateY(-10px);
+	transform: translateY(-1000px);
 	opacity: 0;
-	transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: 70ms cubic-bezier(0.075, 0.82, 0.165, 1);
 	&:after {
 		position: absolute;
 		content: "";

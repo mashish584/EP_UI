@@ -2,12 +2,25 @@
 	border-radius: 5px;
 	background: darken($primary_bg, 25%);
 	padding: em(5px);
+	text-align: center;
+	cursor: pointer;
+	&-th {
+		background: $theme_color;
+		color: $primary_bg;
+	}
 	&-search {
 		height: 45px;
 		align-self: center;
 		margin: auto em(10px);
 		padding: em(10px) em(25px);
-		background: $theme_color;
-		color: $primary_bg;
+	}
+	&-submit {
+		border-radius: 5px;
+		@include WH(100%, auto);
+		padding: em(15px) em(25px);
+	}
+	&-more {
+		padding: em(10px) em(30px);
+		border-radius: 25px;
 	}
 }

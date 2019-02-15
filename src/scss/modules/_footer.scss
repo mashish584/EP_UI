@@ -1,0 +1,38 @@
+.platform {
+	&-info {
+		p {
+			color: darken($primary-bg, 65%);
+			font-size: em(14px);
+			line-height: em(27px, 14px);
+		}
+		span {
+			display: block;
+			color: darken($primary-bg, 45%);
+			font-size: em(14px);
+			font-weight: map-get($fontWeight, "bold");
+		}
+		&--meta {
+			border-top: 1px solid rgba(invert($primary-bg), 10%);
+			margin-top: em(27px);
+			padding: em(15px) 0;
+			.social-list li {
+				display: inline-block;
+				margin: 0 em(5px);
+				a {
+					color: darken($primary-bg, 45%);
+				}
+			}
+		}
+	}
+	&-contact {
+		.input-group {
+			margin: em(7px) 0;
+		}
+		input,
+		textarea {
+			padding: em(23px) em(5px) em(10px);
+			border-radius: 5px;
+			border: 1px solid darken($primary-bg, 10%);
+		}
+	}
+}

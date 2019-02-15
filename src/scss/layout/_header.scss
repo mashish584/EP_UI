@@ -5,10 +5,8 @@ header {
 		background-size: cover;
 		@include WH();
 		&:after {
-			position: absolute;
-			content: "";
+			@extend %abs;
 			@include WH();
-			left: 0;
 			background: rgba(invert($primary_bg), 0.5);
 		}
 	}

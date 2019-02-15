@@ -1,0 +1,31 @@
+#container {
+	padding: em(15px) em(25px);
+	.upcoming-events {
+		@include flexy();
+		&--card {
+			margin: em(10px) 0.5%;
+			flex-basis: flexWidth(4);
+		}
+		.user-meta {
+			margin: em(10px) 0 0;
+			@include flexy() {
+				align-items: center;
+			}
+			font-weight: map-get($fontWeight, "thin");
+			img {
+				@include WH(50px, 50px);
+				border-radius: 50%;
+				margin-right: em(15px);
+			}
+		}
+	}
+	.event-categories {
+		@include flexy();
+		&--card {
+			margin: em(10px) 0.5%;
+			flex-basis: flexWidth(5);
+			height: 245px;
+			max-height: 245px;
+		}
+	}
+}

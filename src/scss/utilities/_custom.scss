@@ -1,0 +1,9 @@
+.ct-right {
+	float: right;
+}
+
+.clrfx::after {
+	content: "";
+	clear: both;
+	display: table;
+}

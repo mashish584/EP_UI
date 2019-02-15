@@ -10,7 +10,7 @@ ul {
 }
 
 body {
-	background: darken($primary_bg, 5%);
+	background: $primary-bg;
 	font-family: unquote(map-get($fontsCollection, "two"));
 	font-size: $base_font;
 	font-weight: map-get($fontWeight, "med");
@@ -31,4 +31,18 @@ img {
 button {
 	background: none;
 	border: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+small {
+	color: darken($primary-bg, 65%);
+	font-weight: map-get($fontWeight, "med");
+}
+
+span {
+	b {
+		font-weight: map-get($fontWeight, "bold");
+	}
 }

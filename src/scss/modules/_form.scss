@@ -7,7 +7,8 @@
 		font-size: 14px;
 		color: darken($primary_bg, 25%);
 	}
-	input {
+	input,
+	textarea {
 		padding: em(10px);
 		@include WH(100%, auto);
 	}
