@@ -17,13 +17,6 @@ footer {
 				border-top: 1px solid rgba(invert($primary-bg), 10%);
 				margin-top: em(27px);
 				padding: em(15px) 0;
-				.social-list li {
-					display: inline-block;
-					margin: 0 em(5px);
-					a {
-						color: darken($primary-bg, 45%);
-					}
-				}
 			}
 		}
 		&-contact {
@@ -50,7 +43,7 @@ footer {
 			color: $primary-bg !important;
 		}
 		button {
-			background: darken($theme_color, 18%) !important;
+			background: darken($theme_color, 25%) !important;
 		}
 		&:after {
 			@extend %abs;

@@ -1,0 +1,85 @@
+$common: "user";
+
+.profile {
+	margin-top: em(75px);
+	&-navigation {
+		position: relative;
+		&--item {
+			display: block;
+			font-size: 30px;
+			color: darken($primary-bg, 45%);
+			i {
+				margin-right: em(25px, 30px);
+			}
+			&.active {
+				position: relative;
+				color: $theme_color;
+				&:after {
+					@extend %abs;
+					@include WH(5px, 50px);
+					background: $theme_color;
+					top: -10px;
+					left: 99%;
+					z-index: 99;
+				}
+			}
+		}
+		&:after {
+			@extend %abs;
+			@include WH(2px, 105%);
+			background: darken($primary-bg, 15%);
+			left: 100%;
+		}
+	}
+	&-info {
+		padding: em(25px) em(15px);
+		&--#{$common} {
+			.#{$common} {
+				&-image {
+					position: relative;
+					@include WH(150px, 150px);
+					span {
+						position: absolute;
+						right: -15px;
+						bottom: 25px;
+						color: $theme_color;
+						font-size: 32px;
+					}
+				}
+				&-meta {
+					margin-left: em(55px);
+					h2 {
+						margin: 0 0 em(5px) !important;
+					}
+					span {
+						color: $theme_color;
+					}
+					.social-list {
+						margin-top: em(25px);
+						li {
+							margin: 0 10px;
+							a {
+								font-size: 27px;
+								color: darken($primary-bg, 20%);
+							}
+							&:nth-of-type(1) {
+								margin-left: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+		&--about {
+			padding-top: em(15px);
+			span {
+				display: block;
+				margin: em(25px) 0 0;
+				color: darken($primary-bg, 75%);
+				i {
+					color: $theme_color;
+				}
+			}
+		}
+	}
+}

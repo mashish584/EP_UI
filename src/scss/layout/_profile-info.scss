@@ -1,0 +1,22 @@
+.profile {
+	@include flexy() {
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+	}
+
+	&-navigation {
+		flex-basis: 300px;
+		max-height: 400px;
+		@include flexy(column) {
+			justify-content: space-evenly;
+		}
+	}
+	&-info {
+		flex-basis: 900px;
+		&--user {
+			@include flexy() {
+				flex-wrap: nowrap;
+			}
+		}
+	}
+}
