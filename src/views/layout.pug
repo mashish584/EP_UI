@@ -7,10 +7,12 @@ html(lang="en")
 		link(rel="stylesheet", href="../scss/main.scss")
 		title EP
 	body
-		block header
-			include template/_header.pug
-		block content
-		block footer
-			include template/_footer.pug
-		block scripts
-			script(src="../js/main.js")
+	//- including mixins
+	include template/_footer
+	block header
+		include template/_header
+	block content
+	block footer
+		+footer()
+	block scripts
+		script(src="../js/main.js")

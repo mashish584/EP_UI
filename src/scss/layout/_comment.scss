@@ -1,0 +1,17 @@
+#commentForm {
+	@include flexy() {
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+}
+
+.comment {
+	@include flexy() {
+		flex-wrap: nowrap;
+	}
+	&-content--meta {
+		@include flexy() {
+			justify-content: space-between;
+		}
+	}
+}

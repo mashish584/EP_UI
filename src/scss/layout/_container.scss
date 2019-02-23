@@ -1,7 +1,18 @@
 #container {
 	padding: em(15px) em(25px);
-	.upcoming-events {
+	h2 {
+		margin: em(25px) 0.5%;
+	}
+
+	#other {
+		display: block;
+		margin-top: em(85px);
+	}
+
+	.upcoming-events,
+	.other-events {
 		@include flexy();
+		margin-bottom: em(75px);
 		&--card {
 			margin: em(10px) 0.5%;
 			flex-basis: flexWidth(4);
@@ -21,11 +32,26 @@
 	}
 	.event-categories {
 		@include flexy();
+		margin-bottom: em(75px);
 		&--card {
 			margin: em(10px) 0.5%;
 			flex-basis: flexWidth(5);
 			height: 245px;
 			max-height: 245px;
+		}
+	}
+	.event {
+		@include flexy() {
+			flex-wrap: nowrap;
+		}
+		&-info {
+			flex-shrink: 2;
+		}
+		&-host {
+			padding-top: em(50px);
+			@include flexy(column) {
+				align-items: center;
+			}
 		}
 	}
 }

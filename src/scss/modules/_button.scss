@@ -1,12 +1,13 @@
 .btn {
+	display: inline-block;
 	border-radius: 5px;
 	background: darken($primary_bg, 25%);
 	padding: em(5px);
 	text-align: center;
 	cursor: pointer;
 	&-th {
-		background: $theme_color;
-		color: $primary_bg;
+		background: $theme_color !important;
+		color: $primary_bg !important;
 	}
 	&-search {
 		height: 45px;
@@ -22,5 +23,13 @@
 	&-more {
 		padding: em(10px) em(30px);
 		border-radius: 25px;
+	}
+	&-reply {
+		background: none;
+		margin: em(10px) 0;
+		color: $theme_color;
+	}
+	i {
+		margin-right: em(10px);
 	}
 }

@@ -1,4 +1,9 @@
-.upcoming-events {
+.upcoming-events,
+.other-events {
+	&--card {
+		background: darken($primary_bg, 5%);
+		box-shadow: 0 2px 5px rgba(invert($primary_bg), 0.3);
+	}
 	.card {
 		&-top {
 			position: relative;
@@ -18,7 +23,7 @@
 			}
 		}
 		&-bottom {
-			background: darken($primary_bg, 5%);
+			// background: darken($primary_bg, 5%);
 			padding: em(10px);
 			&--meta {
 				color: darken($primary_bg, 25%);

@@ -7,7 +7,7 @@ header {
 		&:after {
 			@extend %abs;
 			@include WH();
-			background: rgba(invert($primary_bg), 0.5);
+			background: rgba(invert($primary_bg), 0.6);
 		}
 	}
 }

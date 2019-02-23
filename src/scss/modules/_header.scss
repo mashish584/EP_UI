@@ -44,4 +44,22 @@ header {
 			}
 		}
 	}
+	#content {
+		position: absolute;
+		z-index: 999;
+		color: $primary_bg;
+		bottom: 25px;
+		left: 25px;
+		h2 {
+			font-size: em(42px);
+			margin-bottom: em(10px, 42px);
+		}
+		span {
+			font-size: em(24px);
+			font-weight: map-get($fontWeight, "bold");
+			i {
+				color: $theme_color;
+			}
+		}
+	}
 }
