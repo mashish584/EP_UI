@@ -12,18 +12,6 @@ $common: "user";
 			i {
 				margin-right: em(25px, 30px);
 			}
-			&.active {
-				position: relative;
-				color: $theme_color;
-				&:after {
-					@extend %abs;
-					@include WH(5px, 50px);
-					background: $theme_color;
-					top: -10px;
-					left: 99%;
-					z-index: 99;
-				}
-			}
 		}
 		&:after {
 			@extend %abs;
@@ -119,6 +107,47 @@ $common: "user";
 					color: $primary-bg;
 					z-index: 999;
 				}
+			}
+		}
+	}
+	&-wallet {
+		&--meta {
+			span {
+				min-height: 125px;
+				padding: em(15px, 24px);
+				border-radius: 5px;
+				background: darken($primary-bg, 35%);
+				color: $primary-bg;
+				font-size: 24px;
+				b {
+					display: block;
+					font-size: em(40px, 24px);
+					margin-top: em(5px, 24px);
+				}
+			}
+		}
+		&--data {
+			margin-top: em(25px);
+		}
+	}
+	&-settings {
+		form {
+			@include WH(350px);
+			margin-top: em(25px);
+			.input-group {
+				margin: em(10px) 0;
+				label {
+					margin: em(2px) em(2px) 0;
+					font-weight: map-get($fontWeight, bold);
+				}
+				input {
+					border: 1px solid darken($primary-bg, 15%);
+					padding: em(25px) em(10px) em(15px);
+				}
+			}
+			.btn-submit {
+				padding: em(17px);
+				border-radius: 0 !important;
 			}
 		}
 	}

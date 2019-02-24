@@ -29,4 +29,17 @@
 			flex-basis: flexWidth(3);
 		}
 	}
+
+	&-wallet {
+		flex-basis: 900px;
+		&--meta {
+			@include flexy() {
+				flex-wrap: nowrap;
+			}
+			span {
+				margin: 0 0.5%;
+				flex-basis: flexWidth(3);
+			}
+		}
+	}
 }

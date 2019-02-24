@@ -2,6 +2,30 @@
 	float: right;
 }
 
+.gr {
+	&-2 {
+		flex-grow: 2 !important;
+	}
+	&-3 {
+		flex-grow: 3 !important;
+	}
+	&-5 {
+		flex-grow: 5 !important;
+	}
+}
+
+.sr {
+	&-2 {
+		flex-shrink: 2 !important;
+	}
+	&-3 {
+		flex-shrink: 3 !important;
+	}
+	&-5 {
+		flex-shrink: 5 !important;
+	}
+}
+
 .clrfx::after {
 	content: "";
 	clear: both;
