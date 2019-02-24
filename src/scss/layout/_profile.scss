@@ -1,11 +1,12 @@
 .profile {
+	min-height: 400px;
 	@include flexy() {
 		flex-wrap: nowrap;
-		justify-content: space-evenly;
 	}
 
 	&-navigation {
 		flex-basis: 300px;
+		min-width: 300px;
 		max-height: 400px;
 		@include flexy(column) {
 			justify-content: space-evenly;
@@ -17,6 +18,15 @@
 			@include flexy() {
 				flex-wrap: nowrap;
 			}
+		}
+	}
+
+	&-events {
+		flex-basis: 900px;
+		@include flexy();
+		&--item {
+			margin: em(5px) 0.5%;
+			flex-basis: flexWidth(3);
 		}
 	}
 }

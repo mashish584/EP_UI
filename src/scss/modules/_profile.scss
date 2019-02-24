@@ -1,9 +1,10 @@
 $common: "user";
 
 .profile {
-	margin-top: em(75px);
+	margin: em(75px);
 	&-navigation {
 		position: relative;
+		margin-right: em(35px);
 		&--item {
 			display: block;
 			font-size: 30px;
@@ -78,6 +79,45 @@ $common: "user";
 				color: darken($primary-bg, 75%);
 				i {
 					color: $theme_color;
+				}
+			}
+		}
+	}
+	&-events {
+		&--item {
+			position: relative;
+			max-height: 175px;
+			border-radius: 5px;
+			transition: 100ms ease;
+			img {
+				border-radius: 5px;
+			}
+			&:after {
+				@extend %abs;
+				@include WH(100%, 100%);
+				background: rgba(invert($primary-bg), 65%);
+				border-radius: 5px;
+			}
+			.content {
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				color: $primary-bg;
+				z-index: 999;
+				padding: em(25px) em(15px);
+				transition: 200ms ease 100ms;
+				h2 {
+					margin: 0 !important;
+				}
+				p {
+					font-size: 12px;
+				}
+				span {
+					position: absolute;
+					top: 10px;
+					right: 10px;
+					color: $primary-bg;
+					z-index: 999;
 				}
 			}
 		}

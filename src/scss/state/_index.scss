@@ -14,3 +14,15 @@
 		}
 	}
 }
+
+// profile events
+.profile-events {
+	&--item:hover {
+		transform: scale(1.2);
+		z-index: 999;
+		box-shadow: -2px 2px 10px rgba($primary_bg, 45%);
+		.content {
+			opacity: 1;
+		}
+	}
+}
