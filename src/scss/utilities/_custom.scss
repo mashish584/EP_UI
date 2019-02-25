@@ -2,6 +2,10 @@
 	float: right;
 }
 
+.flx {
+	@include flexy(row, true);
+}
+
 .gr {
 	&-2 {
 		flex-grow: 2 !important;
@@ -23,6 +27,29 @@
 	}
 	&-5 {
 		flex-shrink: 5 !important;
+	}
+}
+
+.upload-file {
+	position: relative !important;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+	top: 0 !important;
+	left: 0 !important;
+	@include WH(200px);
+	text-align: center;
+	border: 1px solid darken($primary_bg, 25%);
+	line-height: 60px;
+	padding-left: 15px;
+	color: darken($primary_bg, 45%) !important;
+	i {
+		font-size: 18px !important;
+		color: $theme_color;
+		left: 15px;
+		margin-top: -9px !important;
+		right: initial !important;
+		font-weight: map-get($fontWeight, thin) !important;
 	}
 }
 

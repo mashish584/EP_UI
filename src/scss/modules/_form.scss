@@ -1,40 +1,49 @@
-.input-group {
-	position: relative;
-	label {
-		position: absolute;
-		top: 5px;
-		left: 5px;
-		font-size: 14px;
-		color: darken($primary_bg, 25%);
-	}
-	input,
-	textarea {
-		padding: em(10px);
-		@include WH(100%, auto);
-	}
-	i {
-		position: absolute;
-		font-size: 24px;
-		right: 22px;
-		top: 50%;
-		margin-top: -8px;
-		font-weight: map-get($fontWeight, "bold");
-	}
-	& .dropdown-list {
-		position: absolute;
-		@include WH(102%, auto);
-		background: $primary_bg;
-		top: 110%;
-		left: -6px;
-		max-height: 0;
-		// padding: 0 em(15px);
-		overflow: auto;
-		transition: 100ms ease-in;
-		li {
-			background: $primary_bg;
-			padding: em(25px) em(15px);
-			max-height: 70px;
-			border-bottom: border(1px, invert($primary_bg, 5%));
+.input {
+	&-group {
+		position: relative;
+		label {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			font-size: 14px;
+			color: darken($primary_bg, 25%);
 		}
+		input,
+		textarea {
+			padding: em(10px);
+			@include WH(100%, auto);
+		}
+		input[type="file"] {
+			display: none;
+		}
+		i {
+			position: absolute;
+			font-size: 24px;
+			right: 22px;
+			top: 50%;
+			margin-top: -8px;
+			font-weight: map-get($fontWeight, "bold");
+		}
+		& .dropdown-list {
+			position: absolute;
+			@include WH(102%, auto);
+			background: $primary_bg;
+			top: 110%;
+			left: -6px;
+			max-height: 0;
+			// padding: 0 em(15px);
+			overflow: auto;
+			transition: 100ms ease-in;
+			li {
+				background: $primary_bg;
+				padding: em(25px) em(15px);
+				max-height: 70px;
+				border-bottom: border(1px, invert($primary_bg, 5%));
+			}
+		}
+	}
+	&-actions {
+		@include WH(255px);
+		margin-left: auto;
 	}
 }

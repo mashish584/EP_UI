@@ -1,0 +1,24 @@
+.form-fluid {
+	@include WH(70%);
+	margin: 10px auto;
+	h2 {
+		font-size: 35px;
+		margin-bottom: em(14px, 35px) !important;
+	}
+}
+
+.input {
+	&-container {
+		@include flexy();
+		> div {
+			flex: 1;
+			margin: 10px;
+		}
+	}
+	&-actions {
+		@include flexy() {
+			justify-content: space-between;
+			flex-wrap: nowrap;
+		}
+	}
+}

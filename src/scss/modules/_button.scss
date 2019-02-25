@@ -29,6 +29,11 @@
 		margin: em(10px) 0;
 		color: $theme_color;
 	}
+	&-cancel {
+		background: none;
+		color: $theme_color;
+		border: 2px solid darken($primary_bg, 25%);
+	}
 	i {
 		margin-right: em(10px);
 	}
