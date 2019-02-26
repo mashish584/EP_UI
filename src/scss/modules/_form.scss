@@ -35,10 +35,12 @@
 			overflow: auto;
 			transition: 100ms ease-in;
 			li {
+				cursor: pointer;
 				background: $primary_bg;
 				padding: em(25px) em(15px);
 				max-height: 70px;
 				border-bottom: border(1px, invert($primary_bg, 5%));
+				transition: 70ms ease-in;
 			}
 		}
 	}

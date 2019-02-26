@@ -40,4 +40,14 @@
 			}
 		}
 	}
+	.show-list {
+		border: 1px solid darken($primary_bg, 15%);
+		top: 100%;
+		left: 0;
+		@include WH(100%, auto);
+		li {
+			background: darken($primary_bg, 5%);
+			border-bottom: 1px solid darken($primary_bg, 10%);
+		}
+	}
 }
