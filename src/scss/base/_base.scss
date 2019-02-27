@@ -59,6 +59,7 @@ span {
 }
 
 hr {
+	position: relative;
 	margin: em(35px) 0;
 	border: 1px solid darken($primary-bg, 10%);
 }

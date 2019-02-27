@@ -1,3 +1,55 @@
+#form-container {
+	@include WH(450px, auto);
+	min-height: 100vh;
+	margin: 0 auto;
+	background: $primary_bg;
+	padding: 0 em(25px);
+	form {
+		@include WH(100%, auto);
+		.input-group {
+			margin: em(15px) auto;
+			label {
+				top: 10px;
+				left: 15px;
+			}
+			input {
+				padding: em(25px) em(15px) em(15px);
+			}
+		}
+		.btn-submit {
+			border-radius: 0;
+		}
+	}
+	.logo {
+		@include WH(70px, 70px);
+	}
+	.st-link {
+		align-self: flex-start;
+	}
+	hr {
+		@include WH(100%, auto);
+		margin: em(55px) auto;
+	}
+	span {
+		margin: em(25px) 0;
+		color: darken($primary_bg, 25%);
+		align-self: flex-start;
+	}
+}
+
+.social-logins {
+	.btn {
+		font-size: 14px;
+		margin: em(5px, 14px) 0;
+		padding: em(10px, 14px) em(15px, 14px);
+		flex-basis: flexWidth(2);
+		color: $primary_bg;
+		&:nth-of-type(1) {
+			background: $fb_color;
+		}
+	}
+}
+
 .input {
 	&-group {
 		position: relative;

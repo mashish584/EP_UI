@@ -1,8 +1,4 @@
 #my-nav {
-	.logo {
-		display: inline-block;
-		@include WH(50px, 50px);
-	}
 	.notification {
 		position: relative;
 		.sub-menu {

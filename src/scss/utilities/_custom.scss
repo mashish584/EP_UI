@@ -1,9 +1,26 @@
+#layer {
+	position: fixed;
+	background: getVarValue(header-bg) no-repeat center;
+	background-size: cover;
+	@include WH(100%, 100vh);
+	z-index: -1;
+	&:after {
+		@extend %abs;
+		@include WH(100%, 100vh);
+		background: rgba($theme_color, 85%);
+	}
+}
+
 .ct-right {
 	float: right;
 }
 
 .flx {
 	@include flexy(row, true);
+}
+
+.pd-0 {
+	padding: 0 !important;
 }
 
 .gr {
@@ -50,6 +67,39 @@
 		margin-top: -9px !important;
 		right: initial !important;
 		font-weight: map-get($fontWeight, thin) !important;
+	}
+}
+
+.logo {
+	display: inline-block;
+	@include WH(50px, 50px);
+	&:focus {
+		outline: none;
+	}
+}
+
+.st-link {
+	color: darken($primary_bg, 25%);
+	text-decoration: underline;
+}
+
+.hlt {
+	color: $theme_color;
+	font-weight: map-get($fontWeight, bold);
+}
+
+.br:after {
+	@extend %abs;
+	content: "OR";
+	@include WH(50px, 50px);
+	background: $primary_bg;
+	font-weight: map-get($fontWeight, "bold");
+	left: 50%;
+	top: calc(-50px / 2);
+	margin-left: calc(-50px / 2);
+	@include flexy() {
+		align-items: center;
+		justify-content: center;
 	}
 }
 
